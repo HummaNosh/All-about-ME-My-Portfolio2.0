@@ -1,6 +1,7 @@
 # My-Portfolio2.0
 
-The purpose of this project is to talk about me and my background. Code is from scratch using HTML and CSS tools.
+The purpose of this project is to talk about me and my background. The webpage is similar to the mock-up (confirmed by tutor it can be a little different)
+Code is from scratch using HTML and CSS tools.
 
 The portfolio includes:
 
