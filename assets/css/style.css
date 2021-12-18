@@ -176,6 +176,8 @@ footer {
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
+
+/* DONT FORGET TO CHECK THE CSS FOLDER IN ASSETS */
 /* Screen res */
 @media screen and (max-width: 994px) {
   aside {
