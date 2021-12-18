@@ -17,4 +17,4 @@ SO THAT I can review samples of their work and assess whether they're a good can
 Below is a rough screenshot of the page:
 ![image](https://user-images.githubusercontent.com/93604239/146657833-75b91a24-ce0b-44a1-9b99-a5df569becc3.png)
 
-Deployed Link: https://hummanosh.github.io/My-Portfolio2.0/
+Deployed Link: https://hummanosh.github.io/All-about-ME-My-Portfolio2.0/
