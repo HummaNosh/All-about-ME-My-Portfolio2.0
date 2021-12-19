@@ -8,7 +8,8 @@ p {
   font-size: 20px;
 }
 body {
-  display: block;
+  display: flexbox;
+  width: fit-content;
 }
 
 header {
@@ -21,7 +22,6 @@ header {
 
 /* Nav bar */
 nav {
-  margin-right: 20px;
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
@@ -82,7 +82,8 @@ h1:hover .no:after {
 /* Avatar */
 
 .first {
-  background-color: white;
+  width: 80rem;
+  height: 50rem;
   display: block;
 }
 .avatar {
@@ -121,6 +122,12 @@ h2 {
 }
 
 /* _------------------------------------------------- */
+
+.whole {
+  width: fit-content;
+  display: flexbox;
+  background-color: red;
+}
 
 /* All main headings */
 h3 {
@@ -300,38 +307,84 @@ footer {
 /* Screen res */
 
 @media screen and (max-width: 768px) {
-  nav ul {
+  nav {
     display: flex;
     justify-content: flex-start;
   }
 
   nav li {
     flex: 1 1 0;
+    display: flexbox;
   }
 
   main {
     display: flexbox;
     margin: -10px;
+    width: 50%;
   }
 
   body {
-    display: flex;
-    flex-direction: column;
+    display: flexbox;
+    width: 100%;
   }
 
   header {
+    display: flexbox;
     background: green;
   }
   nav {
+    display: flexbox;
     width: 25%;
   }
 
   .welcome {
+    display: flexbox;
+    width: 50%;
+  }
+
+  .whole {
+    display: flexbox;
+    width: fit-content;
+  }
+
+  .mine {
+    display: flexbox;
+    width: 50%;
+  }
+
+  .info {
+    display: flexbox;
     width: 100%;
   }
-}
 
+  #box1 {
+    width: 100%;
+  }
+
+  #box2 {
+    width: 100%;
+  }
+
+  #box3 {
+    width: 100%;
+  }
+
+  h1 {
+    display: flexbox;
+    margin: -30%;
+    margin-top: 5%;
+    text-align: center;
+    width: 50%;
+  }
+
+  footer {
+    margin-left: auto;
+  }
+}
 @viewport {
   width: device-width;
-  zoom: 1;
+  zoom: 1.1;
+  min-zoom: 0.4;
+  max-zoom: 2;
+  user-zoom: fixed;
 }
