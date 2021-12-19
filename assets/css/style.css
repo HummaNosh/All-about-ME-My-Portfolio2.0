@@ -52,6 +52,11 @@ nav ul.links {
   text-align: center;
 }
 
+/* Main */
+
+main {
+  flex: 70%;
+}
 /* Name */
 
 h1 {
@@ -293,16 +298,27 @@ footer {
 }
 
 /* Screen res */
-@media screen and (max-width: 994px) {
-  aside {
-    width: 50%;
-  }
-  .sections {
-    width: 100%;
-  }
-}
 
 @media screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  nav li {
+    flex: 1 1 0;
+  }
+
+  main {
+    flex-direction: column;
+    background-color: pink;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
   header {
     background: green;
   }
@@ -328,16 +344,6 @@ footer {
   }
   .pic {
     width: 100%;
-  }
-}
-
-/* A birds animation */
-@keyframes example {
-  from {
-    color: red;
-  }
-  to {
-    color: yellow;
   }
 }
 
