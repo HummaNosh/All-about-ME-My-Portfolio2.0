@@ -310,8 +310,8 @@ footer {
   }
 
   main {
-    flex-direction: column;
-    background-color: pink;
+    display: flexbox;
+    margin: -10px;
   }
 
   body {
@@ -327,22 +327,6 @@ footer {
   }
 
   .welcome {
-    width: 100%;
-  }
-
-  .info {
-    width: 100%;
-  }
-  .welcome {
-    width: 50%;
-  }
-  .mine {
-    width: 100%;
-  }
-  .info p {
-    width: 100%;
-  }
-  .pic {
     width: 100%;
   }
 }
