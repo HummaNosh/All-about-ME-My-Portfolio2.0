@@ -4,13 +4,10 @@
   margin: 0;
 }
 
-p {
-  font-size: 20px;
-}
 body {
   display: flex;
   flex-wrap: wrap;
-  width: 100% "";
+  width: 100%;
 }
 
 header {
@@ -18,7 +15,6 @@ header {
   flex-wrap: wrap;
   height: 10 rem;
   width: 100rem;
-  display: flex;
   background-color: black;
   text-align: center;
 }
@@ -60,18 +56,21 @@ nav ul.links {
 main {
   display: flex;
   flex-wrap: wrap;
+  height: 10 rem;
+  width: 100rem;
 }
+
 /* Name */
 
 h1 {
   font-size: 20px;
-  display: inline-block;
   color: black;
   margin-top: 1.5rem;
+  margin-left: 10rem;
   font-family: cursive;
-  padding-left: 700px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  height: fit-content;
 }
 
 .shine::after {
@@ -85,21 +84,20 @@ h1:hover .no:after {
   font-size: 30px;
 }
 
-/* Avatar */
-
+/* Welcome sec */
 .first {
-  width: 80rem;
-  height: 50rem;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .avatar {
   width: 25rem;
   padding-left: 10rem;
   padding-top: 3rem;
   padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-/* Welcome section */
 
 .welcome {
   display: block;
@@ -114,41 +112,38 @@ h1:hover .no:after {
 h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: underline;
+  display: flex;
 }
 
 .welcome p {
   margin-top: 1rem;
+  display: flex;
 }
 
 .connect {
   width: 3rem;
-  height: 3rem;
+  height: fit-content;
   margin-top: 1rem;
   padding: 2px;
-}
-
-/* _------------------------------------------------- */
-
-.whole {
-  width: fit-content;
-  display: flexbox;
+  display: inline-flex;
 }
 
 /* All main headings */
 h3 {
   font-size: 50px;
+  height: fit-content;
+  display: flex;
 }
 
 /* About me article */
 .mine .info {
   display: flex;
   flex-wrap: wrap;
-  width: 80rem;
-  height: 25rem;
+  /* width: 80rem;
+  height: 25rem; */
   padding-left: 150px;
 }
 
-/* About me paragraph */
 .info .text {
   font-size: 25px;
   width: 30rem;
@@ -164,16 +159,6 @@ h3 {
   display: block;
 }
 
-/* All articles */
-
-.info {
-  width: 80rem;
-  height: 20rem;
-  padding-left: 150px;
-  display: block;
-  border-bottom: solid black;
-}
-
 /* About me pic */
 
 .pic {
@@ -183,6 +168,27 @@ h3 {
   width: 25rem;
   height: 20rem;
 }
+
+/* All articles */
+
+.info {
+  width: 80%;
+  height: 25rem;
+  padding-left: 150px;
+  border-bottom: solid black;
+}
+
+/* Cobra and Intro box  */
+.card {
+  margin-top: 1rem;
+  margin-right: 250px;
+  width: fit-content;
+  height: 150px;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* All hovering captions */
 
 .hovercap {
@@ -196,27 +202,13 @@ h3 {
   color: white;
 }
 
-/* Work */
-
-/* Cobra and Intro box */
-.card {
-  margin-top: 1rem;
-  margin-right: 250px;
-  width: fit-content;
-  height: 150px;
-  float: left;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /* Horizeon */
 
 #box1 {
   margin-top: 1rem;
-  margin-right: 250px;
+  margin-right: 20rem;
   width: 450px;
   height: 210px;
-  float: left;
   display: flex;
   flex-wrap: wrap;
 }
@@ -255,7 +247,7 @@ h3 {
   opacity: 1;
 }
 
-/* Introduction */
+/* intro */
 
 #box3 {
   margin-top: -15.5rem;
@@ -290,15 +282,11 @@ button {
   font-weight: bold;
 }
 
-button:hover {
-  background-color: grey;
-}
-
 /* Contact info */
 
 #contactinfo {
   font-size: 20px;
-  margin: 3rem;
+  margin: 5rem;
   list-style-type: none;
   position: relative;
   display: flex;
@@ -318,103 +306,174 @@ footer {
   margin-left: 35rem;
 }
 
-/* Screen res */
+button:hover {
+  background-color: grey;
+}
 
-@media screen and (max-width: 768px) {
-  nav {
-    display: flex;
-    width: 20%;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    margin-right: 0;
-    padding: 0;
-  }
-
-  nav li {
-    flex: 1 1 0;
-    display: flexbox;
-    align-items: center;
-    margin-right: 0;
-    padding: 0;
-  }
+@media (max-width: 768px) {
   header {
-    display: inline-flex;
     justify-content: center;
     height: fit-content;
-    background: green;
-    margin-right: 0;
-    padding: 0;
+    width: 100%;
   }
 
   h1 {
-    display: flex;
+    justify-content: center;
     width: 50%;
-    margin-right: 2rem;
-    padding: 0;
-    justify-content: flex-end;
     height: fit-content;
+    display: flex;
+
+    background-color: yellow;
   }
 
-  main {
-    display: flex;
-    width: 20%;
-    margin: -10px;
+  .first {
     width: fit-content;
-    height: fit-content;
-    justify-content: flex-start;
-  }
-
-  body {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin: 20px 0 0 0;
   }
 
   .welcome {
-    display: flexbox;
-    width: 50%;
-    margin-right: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
   }
-
-  .whole {
-    display: flexbox;
+  .welcome p {
+    display: flex;
+    height: 80%;
     width: fit-content;
-    margin-right: 0;
     padding: 0;
   }
 
-  .mine {
-    display: flexbox;
+  .avatar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    height: fit-content;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mine .info {
+    margin: 0;
+    padding-left: 2rem;
+    width: 80%;
+  }
+
+  .info .text {
+    width: 80%;
+  }
+
+  .pic {
+    display: flex;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     width: 50%;
   }
 
   .info {
-    display: flexbox;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
     width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  #box1 {
-    width: 50%;
+  #background {
+    width: 75%;
+  }
+  #backtext {
+    width: 75%;
+
+    margin-bottom: 2rem;
+  }
+
+  #work {
+    height: 30%;
+    padding: 0;
+    width: 75%;
+    padding-left: 2rem;
+  }
+
+  .box1 {
+    padding: 0;
+    width: fit-content;
+  }
+
+  #box1 .horizeon {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-top: -10rem;
+    margin-bottom: 2rem;
   }
 
   #box2 {
-    width: 50%;
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .cobra {
+    display: flex;
+    align-items: flex-start;
+    margin-left: -40rem;
+    margin-top: -10rem;
+    margin-bottom: 2rem;
   }
 
   #box3 {
+    margin-bottom: 2rem;
+    display: flex;
+    margin: 2rem;
+    margin-top: -15rem;
+    padding: 0;
+  }
+
+  #cv {
+    width: fit-content;
+  }
+  button {
+    margin: 0;
+    margin: 5rem;
+    margin-left: -20rem;
+    padding: 0;
+  }
+  #contact {
+    width: 75%;
+  }
+
+  #contactinfo {
     width: 50%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: -15rem;
   }
 
   footer {
-    justify-content: center;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    margin-top: 30rem;
+    text-align: center;
+  }
+
+  .whole {
+    width: 80%;
+  }
+
+  main {
+    width: 70rem;
+    padding: 0;
   }
 }
+
 @viewport {
   width: device-width;
-  zoom: 1.1;
+  zoom: 0;
   min-zoom: 0.4;
   max-zoom: 2;
   user-zoom: fixed;
