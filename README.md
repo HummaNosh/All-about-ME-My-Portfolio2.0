@@ -31,6 +31,6 @@ Below is the criteria:
 - THEN I am presented with a responsive layout that adapts to my viewport
 
 Below is a rough screenshot of the page:
-![image](https://user-images.githubusercontent.com/93604239/146657833-75b91a24-ce0b-44a1-9b99-a5df569becc3.png)
+![image](![image](https://user-images.githubusercontent.com/93604239/147396244-7109201a-8f91-43af-8593-5ed318384d5b.png))
 
 Deployed Link: https://hummanosh.github.io/All-about-ME-My-Portfolio2.0/
